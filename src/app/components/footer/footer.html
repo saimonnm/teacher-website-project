@@ -1,0 +1,15 @@
+
+<footer >
+    <div class="container-fluid">
+    <section>
+        <ul class="list-unstyled d-flex flex-row">
+            @for(logo of loghi(); track logo.id){
+<li class="mx-3">
+    <a target="_blank" rel="noopener noreferrer"[href]="logo.url">
+        @if(logo.icon){
+    <img  [src]="logo.icon" [alt]="logo.altText"/>}</a>
+</li>
+            }
+        </ul>
+    </section></div>
+</footer>

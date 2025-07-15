@@ -21,13 +21,11 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "css",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+             "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -80,10 +78,7 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "css",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
