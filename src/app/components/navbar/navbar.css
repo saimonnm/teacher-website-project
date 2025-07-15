@@ -1,0 +1,14 @@
+nav{
+    background-color: #4a5759;
+}
+
+ul li:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.navbar-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
