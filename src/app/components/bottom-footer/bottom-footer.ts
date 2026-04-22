@@ -2,12 +2,12 @@ import { Component, signal } from '@angular/core';
 import { LoghiFooter } from '../../models/loghi.model';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-bottom-footer',
   imports: [],
-  templateUrl: './footer.html',
-  styleUrl: './footer.css',
+  templateUrl: './bottom-footer.html',
+  styleUrl: './bottom-footer.css',
 })
-export class Footer {
+export class BottomFooter {
   loghi = signal<LoghiFooter[]>([
     {
       id: 0,
