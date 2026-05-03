@@ -22,4 +22,11 @@ export const routes: Routes = [
         (x) => x.LoginComponent,
       ),
   },
+  {
+    path: 'register-page',
+    loadComponent: () =>
+      import('./components/register-page/register-page.component').then(
+        (x) => x.RegisterPageComponent,
+      ),
+  },
 ];
