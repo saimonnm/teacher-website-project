@@ -1,5 +1,5 @@
-import { Component, signal } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, inject, signal } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 import { Navbar } from '../../models/navbar.model';
 
 @Component({
@@ -9,6 +9,7 @@ import { Navbar } from '../../models/navbar.model';
   styleUrl: './navbar.css',
 })
 export class HeaderNav {
+  router = inject(Router);
   navbarItems = signal<Navbar[]>([
     {
       id: 0,
@@ -32,4 +33,8 @@ export class HeaderNav {
       routerLink: '',
     },
   ]);
+
+  onLogin() {
+    this.router.navigate(['login']);
+  }
 }
