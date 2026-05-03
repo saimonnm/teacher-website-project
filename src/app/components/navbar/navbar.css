@@ -1,26 +1,3 @@
 nav {
   background-color: #b0c4b1;
 }
-
-ul li:hover {
-  color: white;
-  cursor: pointer;
-}
-
-.navbar-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.navbar a {
-  color: #f7e1d7;
-}
-
-.login {
-  color: #f7e1d7;
-}
-
-.navbar a:hover {
-  color: #9d8189;
-}

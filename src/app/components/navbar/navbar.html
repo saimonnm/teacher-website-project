@@ -6,14 +6,19 @@
       <img
         [src]="navbarItem.icon || ''"
         [alt]="navbarItem.label"
-        class="navbar-icon"
+        class="w-[30px] h-[30px] mr-[10px]"
       />
       }
-      <li class="nav-item mx-3">
-        <a [routerLink]="navbarItem.routerLink"> {{navbarItem.label}} </a>
+      <li class="nav-item mx-3 hover:cursor-pointer">
+        <a
+          class="hover:text-primary text-[#f7e1d7]"
+          [routerLink]="navbarItem.routerLink"
+        >
+          {{navbarItem.label}}
+        </a>
       </li>
       }
     </ul>
-    <button (click)="onLogin()" class="login">Accedi</button>
+    <button (click)="onLogin()" class="text-primary">Accedi</button>
   </div>
 </nav>
