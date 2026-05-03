@@ -1,3 +1,21 @@
-<p>
-  login works!
-</p>
+<div class="flex flex-col gap-4 max-w-sm mx-auto mt-10">
+  <form [formGroup]="loginForm" class="flex flex-col gap-2">
+    <label>Username</label>
+    <input type="text" formControlName="username" />
+    <label>Password</label>
+    <input type="text" formControlName="password" />
+  </form>
+
+  <p>
+    Non hai ancora un account?
+    <a routerLink="/register-page" class="hover:text-primary">Registrati</a>
+  </p>
+
+  <button class="hover:text-primary" (click)="startLogin()">Accedi</button>
+
+  @if (
+    loginForm.controls.password.invalid && loginForm.controls.password.dirty
+  ) {
+    <p class="text-red-600">Password incorretta. Inserire almeno 5 elementi</p>
+  }
+</div>
