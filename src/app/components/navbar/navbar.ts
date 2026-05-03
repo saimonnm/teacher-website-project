@@ -9,7 +9,7 @@ import { Navbar } from '../../models/navbar.model';
   styleUrl: './navbar.css',
 })
 export class HeaderNav {
-  router = inject(Router);
+  private router = inject(Router);
   navbarItems = signal<Navbar[]>([
     {
       id: 0,
